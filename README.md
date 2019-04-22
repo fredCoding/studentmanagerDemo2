@@ -1,34 +1,26 @@
 # studentmanagerDemo2
 According to a requirement that we need a same sysytem for different system
 
+需求如下:
+在用mongodb实现一个成绩管理系统，实现对学生成绩的增删改查功能的系统的基础上实现如下需求：
+
+
+假定现在需要实现一学生管理系统，需要实现如下功能。
+1. 对学生信息进行管理。包括如姓名、学号、宿舍号、手机号等信息进行增删改查。
+2. 对学生的课程信息进行管理。比如课程名称、上课时间、课程地点等信息进行增删改查。
+3. 对学生成绩信息进行管理。比如课程成绩，单科名次等信息进行增删改查。
+
+但是现在该系统使用的学校有很多，他们各自需要管理的信息构成不一样，比如学生信息
+对于中学B只管理姓名、学号、家庭地址、监护人姓名、监护人联系方式、当前学生的一门课成绩等。
+对于大学A则需要管理姓名、学号、家庭地址、邮箱、电话、宿舍号、当前学生的一门课成绩等。
+
+但是总体上他们都是需要对学生信息、课程、成绩信息进行管理。
+
+请实现用mongodb+java实现该需求。
+
+
 使用maven、spring boot2.1.4、jdk1.8,lombok插件 启动Demo,根据需求，做了思路图，见同目录结构分析图。
 
-对数据库做如下初始化:
+对数据库的数据做初始化，见同目录 初始化Mongo语句.txt 文件
 
-db.StudentInfo.insert([
-                        {school_id:"A",studentNo:"20200489",studentName:"李太牛",hotelNo:"A-114",phoneNo:"18398261888",home:"开封市",email:"415645646@qq.com"},
-                        {school_id:"A",studentNo:"20200479",studentName:"李二牛",hotelNo:"A-113",phoneNo:"18398261822",home:"大连",email:"797945@qq.com"},
-                        {school_id:"A",studentNo:"20200476",studentName:"李二妞",hotelNo:"B-113",phoneNo:"18348261911"，home:"圣龙岛",email:"4646799@163.com"},
-                        
-                        {school_id:"B",studentNo:"B122",studentName:"刘阿斗",hotelNo:"7-22",phoneNo:"15376768973",home:"河南省。。。",guardianName:"李大娘",guardianPhoneNo:"18398264545"},
-                        {school_id:"B",studentNo:"B102",studentName:"刘阿斗",hotelNo:"7-22",phoneNo:"15376768973",home:"蓬莱仙岛",guardianName:"刘汗",guardianPhoneNo:"18398267879"},
-])
-
-db.ClassInfo.insert([
-                       {school_id:"A",classNo:"103",className:"计算机网络",classRoom:"10-A213",classTime:"1-2"},
-                       {school_id:"A",classNo:"101",className:"计算机网络",classRoom:"10-A314",classTime:"3-4"},
-                       
-                       {school_id:"B",classNo:"1",className:"数学",classRoom:"1-01",classTime:"5-6",},
-                       {school_id:"B",classNo:"2",className:"语文",classRoom:"1-01",classTime:"5-6"},
-])
-
-db.StudentScore.insert([
-                        {school_id:"A",studentNo:"20200489",classNo:"103",score:90,classRake:10},
-                        {school_id:"A",studentNo:"20200476",classNo:"104",score:86,classRake:21},
-                        {school_id:"A",studentNo:"20200476",classNo:"101",score :87,classRake:22},
-                        
-                        {school_id:"B",studentNo:"B102",classNo:"1",score:145,classRake:1},
-                        {school_id:"B",studentNo:"B102",classNo:"2",score:120,classRake:3},
-                        
-])
 
