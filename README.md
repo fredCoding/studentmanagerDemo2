@@ -1,6 +1,10 @@
 # studentmanagerDemo2
 According to a requirement that we need a same sysytem for different system
 
+使用maven、spring boot2.1.4、jdk1.8,lombok插件 启动Demo,根据需求，做了思路图，见同目录结构分析图。
+
+对数据库的数据做初始化，见同目录 初始化Mongo语句.txt 文件
+
 需求如下:
 在用mongodb实现一个成绩管理系统，实现对学生成绩的增删改查功能的系统的基础上实现如下需求：
 
@@ -19,8 +23,6 @@ According to a requirement that we need a same sysytem for different system
 请实现用mongodb+java实现该需求。
 
 
-使用maven、spring boot2.1.4、jdk1.8,lombok插件 启动Demo,根据需求，做了思路图，见同目录结构分析图。
 
-对数据库的数据做初始化，见同目录 初始化Mongo语句.txt 文件
 
 
