@@ -1,18 +1,20 @@
+use studentManagerDemo_differentschool
+
 db.StudentInfo.insert([
-                        {school_id:"A",studentNo:"20200489",studentName:"ÀîÌ«Å£",hotelNo:"A-114",phoneNo:"18398261888",home:"¿ª·âÊĞ",email:"415645646@qq.com"},
-                        {school_id:"A",studentNo:"20200479",studentName:"Àî¶şÅ£",hotelNo:"A-113",phoneNo:"18398261822",home:"´óÁ¬",email:"797945@qq.com"},
-                        {school_id:"A",studentNo:"20200476",studentName:"Àî¶şæ¤",hotelNo:"B-113",phoneNo:"18348261911"£¬home:"Ê¥Áúµº",email:"4646799@163.com"},
+                        {school_id:"A",studentNo:"20200489",studentName:"æå¤ªç‰›",hotelNo:"A-114",phoneNo:"18398261888",home:"å¼€å°å¸‚",email:"415645646@qq.com"},
+                        {school_id:"A",studentNo:"20200479",studentName:"æäºŒç‰›",hotelNo:"A-113",phoneNo:"18398261822",home:"å¤§è¿",email:"797945@qq.com"},
+                        {school_id:"A",studentNo:"20200476",studentName:"æäºŒå¦",hotelNo:"B-113",phoneNo:"18348261911"ï¼Œhome:"åœ£é¾™å²›",email:"4646799@163.com"},
                         
-                        {school_id:"B",studentNo:"B122",studentName:"Áõ°¢¶·",hotelNo:"7-22",phoneNo:"15376768973",home:"ºÓÄÏÊ¡¡£¡£¡£",guardianName:"Àî´óÄï",guardianPhoneNo:"18398264545"},
-                        {school_id:"B",studentNo:"B102",studentName:"Áõ°¢¶·",hotelNo:"7-22",phoneNo:"15376768973",home:"ÅîÀ³ÏÉµº",guardianName:"Áõº¹",guardianPhoneNo:"18398267879"},
+                        {school_id:"B",studentNo:"B122",studentName:"åˆ˜é˜¿æ–—",hotelNo:"7-22",phoneNo:"15376768973",home:"æ²³å—çœã€‚ã€‚ã€‚",guardianName:"æå¤§å¨˜",guardianPhoneNo:"18398264545"},
+                        {school_id:"B",studentNo:"B102",studentName:"åˆ˜é˜¿æ–—",hotelNo:"7-22",phoneNo:"15376768973",home:"è“¬è±ä»™å²›",guardianName:"åˆ˜æ±—",guardianPhoneNo:"18398267879"},
 ])
 
 db.ClassInfo.insert([
-                       {school_id:"A",classNo:"103",className:"¼ÆËã»úÍøÂç",classRoom:"10-A213",classTime:"1-2"},
-                       {school_id:"A",classNo:"101",className:"¼ÆËã»úÍøÂç",classRoom:"10-A314",classTime:"3-4"},
+                       {school_id:"A",classNo:"103",className:"è®¡ç®—æœºç½‘ç»œ",classRoom:"10-A213",classTime:"1-2"},
+                       {school_id:"A",classNo:"101",className:"è®¡ç®—æœºç½‘ç»œ",classRoom:"10-A314",classTime:"3-4"},
                        
-                       {school_id:"B",classNo:"1",className:"ÊıÑ§",classRoom:"1-01",classTime:"5-6",},
-                       {school_id:"B",classNo:"2",className:"ÓïÎÄ",classRoom:"1-01",classTime:"5-6"},
+                       {school_id:"B",classNo:"1",className:"æ•°å­¦",classRoom:"1-01",classTime:"5-6",},
+                       {school_id:"B",classNo:"2",className:"è¯­æ–‡",classRoom:"1-01",classTime:"5-6"},
 ])
 
 db.StudentScore.insert([
